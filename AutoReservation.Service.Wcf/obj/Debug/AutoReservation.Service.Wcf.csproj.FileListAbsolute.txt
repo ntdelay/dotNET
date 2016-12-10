@@ -1,1 +1,2 @@
 C:\Users\delay\Google Drive\HSR\Prüfung\Grundlagen 32 + (34) = 66\.Net Technologien\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.csprojResolveAssemblyReference.cache
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1 @@
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.csprojResolveAssemblyReference.cache

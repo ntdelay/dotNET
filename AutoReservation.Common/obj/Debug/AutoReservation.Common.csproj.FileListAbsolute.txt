@@ -8,3 +8,12 @@ C:\Users\delay\Google Drive\HSR\Prüfung\Grundlagen 32 + (34) = 66\.Net Technolo
 C:\Users\delay\Google Drive\HSR\Prüfung\Grundlagen 32 + (34) = 66\.Net Technologien\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\obj\Debug\AutoReservation.Common.csprojResolveAssemblyReference.cache
 C:\Users\delay\Google Drive\HSR\Prüfung\Grundlagen 32 + (34) = 66\.Net Technologien\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\obj\Debug\AutoReservation.Common.dll
 C:\Users\delay\Google Drive\HSR\Prüfung\Grundlagen 32 + (34) = 66\.Net Technologien\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\obj\Debug\AutoReservation.Common.pdb
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\AutoReservation.Common.dll.config
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\AutoReservation.Common.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\AutoReservation.Common.pdb
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\EntityFramework.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\EntityFramework.xml
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\obj\Debug\AutoReservation.Common.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Common\obj\Debug\AutoReservation.Common.pdb
