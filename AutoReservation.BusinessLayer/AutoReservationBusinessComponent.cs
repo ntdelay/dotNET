@@ -13,8 +13,8 @@ namespace AutoReservation.BusinessLayer
         private static IQueryable<Reservation> GetReservationQueryable(AutoReservationContext db)
         {
             return db.Reservations
-                .Include(r => r.Auto)
-                .Include(r => r.Kunde);
+                .Include(r => r.Car)
+                .Include(r => r.Client);
         }
         private void ReloadAndSave(AutoReservationContext db, object entryObject)
         {
