@@ -1,33 +1,55 @@
 ﻿using AutoReservation.Common.DataTransferObjects.Core;
+using System.Text;
+using System.Runtime.Serialization;
+using System;
 
 namespace AutoReservation.Common.DataTransferObjects
 {
-    public class AutoDto //: DtoBase<AutoDto>
+    [DataContract]
+    public class AutoDto : DtoBase<AutoDto>
     {
+        [DataMember]
+        public int Id { get; set; }
 
-        //public override string Validate()
-        //{
-        //    StringBuilder error = new StringBuilder();
-        //    if (string.IsNullOrEmpty(marke))
-        //    {
-        //        error.AppendLine("- Marke ist nicht gesetzt.");
-        //    }
-        //    if (tagestarif <= 0)
-        //    {
-        //        error.AppendLine("- Tagestarif muss grösser als 0 sein.");
-        //    }
-        //    if (AutoKlasse == AutoKlasse.Luxusklasse && basistarif <= 0)
-        //    {
-        //        error.AppendLine("- Basistarif eines Luxusautos muss grösser als 0 sein.");
-        //    }
+        [DataMember]
+        public string Marke { get; set; }
 
-        //    if (error.Length == 0) { return null; }
+        [DataMember]
+        public int Tagestarif { get; set; }
 
-        //    return error.ToString();
-        //}
+        [DataMember]
+        public int? Basistarif { get; set; }
 
-        //public override string ToString()
-        //    => $"{Id}; {Marke}; {Tagestarif}; {Basistarif}; {AutoKlasse}";
+        [DataMember]
+        public AutoKlasse AutoKlasse { get; set; }
+
+        [DataMember]
+        public byte[] RowVersion { get; set; }
+
+
+        public override string Validate()
+        {
+            StringBuilder error = new StringBuilder();
+            if (string.IsNullOrEmpty(Marke))
+            {
+                error.AppendLine("- Marke ist nicht gesetzt.");
+            }
+            if (Tagestarif <= 0)
+            {
+                error.AppendLine("- Tagestarif muss grösser als 0 sein.");
+            }
+            if (AutoKlasse == AutoKlasse.Luxusklasse && Basistarif <= 0)
+            {
+                error.AppendLine("- Basistarif eines Luxusautos muss grösser als 0 sein.");
+            }
+
+            if (error.Length == 0) { return null; }
+
+            return error.ToString();
+        }
+
+        public override string ToString()
+            => $"{Id}; {Marke}; {Tagestarif}; {Basistarif}; {AutoKlasse}";
 
     }
 }

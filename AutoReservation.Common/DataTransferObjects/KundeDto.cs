@@ -1,33 +1,51 @@
 ﻿using AutoReservation.Common.DataTransferObjects.Core;
+using System;
+using System.Runtime.Serialization;
+using System.Text;
+
 
 namespace AutoReservation.Common.DataTransferObjects
 {
-    public class KundeDto //: DtoBase<KundeDto>
+    [DataContract]
+    public class KundeDto : DtoBase<KundeDto>
     {
+        [DataMember]
+        public int Id { get; set; }
 
-        //public override string Validate()
-        //{
-        //    StringBuilder error = new StringBuilder();
-        //    if (string.IsNullOrEmpty(Nachname))
-        //    {
-        //        error.AppendLine("- Nachname ist nicht gesetzt.");
-        //    }
-        //    if (string.IsNullOrEmpty(Vorname))
-        //    {
-        //        error.AppendLine("- Vorname ist nicht gesetzt.");
-        //    }
-        //    if (Geburtsdatum == DateTime.MinValue)
-        //    {
-        //        error.AppendLine("- Geburtsdatum ist nicht gesetzt.");
-        //    }
+        [DataMember]
+        public string Nachname { get; set; }
+        [DataMember]
+        public string Vorname { get; set; }
 
-        //    if (error.Length == 0) { return null; }
+        [DataMember]
+        public DateTime Geburtsdatum { get; set; }
 
-        //    return error.ToString();
-        //}
+        [DataMember]
+        public byte[] RowVersion { get; set; }
 
-        //public override string ToString()
-        //    => $"{Id}; {Nachname}; {Vorname}; {Geburtsdatum}";
+        public override string Validate()
+        {
+            StringBuilder error = new StringBuilder();
+            if (string.IsNullOrEmpty(Nachname))
+            {
+                error.AppendLine("- Nachname ist nicht gesetzt.");
+            }
+            if (string.IsNullOrEmpty(Vorname))
+            {
+                error.AppendLine("- Vorname ist nicht gesetzt.");
+            }
+            if (Geburtsdatum == DateTime.MinValue)
+            {
+                error.AppendLine("- Geburtsdatum ist nicht gesetzt.");
+            }
+
+            if (error.Length == 0) { return null; }
+
+            return error.ToString();
+        }
+
+        public override string ToString()
+            => $"{Id}; {Nachname}; {Vorname}; {Geburtsdatum}";
 
     }
 }
