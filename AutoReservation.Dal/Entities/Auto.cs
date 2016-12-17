@@ -13,7 +13,11 @@ namespace AutoReservation.Dal.Entities
 
         public string Brand { get; set; }
         public int Daylefare { get; set; }
-        public int 
+        public int? Basefare { get; set; }
+        public int Carclass { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
 
 
 
