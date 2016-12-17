@@ -9,27 +9,18 @@ namespace AutoReservation.Service.Wcf
     public static class DtoConverter
     {
         #region Auto
-        private static Auto GetAutoInstance(AutoDto dto)
-        {
-            if (dto.AutoKlasse == AutoKlasse.Standard) { return new StandardAuto(); }
-            if (dto.AutoKlasse == AutoKlasse.Mittelklasse) { return new MittelklasseAuto(); }
-            if (dto.AutoKlasse == AutoKlasse.Luxusklasse) { return new LuxusklasseAuto(); }
-            throw new ArgumentException("Unknown AutoDto implementation.", nameof(dto));
-        }
         public static Auto ConvertToEntity(this AutoDto dto)
         {
             if (dto == null) { return null; }
 
-            Auto auto = GetAutoInstance(dto);
+            Auto auto = new Auto();
+            auto.Carclass = (int)dto.AutoKlasse;
             auto.Id = dto.Id;
-            auto.Marke = dto.Marke;
-            auto.Tagestarif = dto.Tagestarif;
+            auto.Brand = dto.Marke;
+            auto.Daylefare = dto.Tagestarif;
             auto.RowVersion = dto.RowVersion;
+            auto.Basefare = dto.Basistarif;
 
-            if (auto is LuxusklasseAuto)
-            {
-                ((LuxusklasseAuto)auto).Basistarif = dto.Basistarif;
-            }
             return auto;
         }
         public static AutoDto ConvertToDto(this Auto entity)
@@ -39,19 +30,13 @@ namespace AutoReservation.Service.Wcf
             AutoDto dto = new AutoDto
             {
                 Id = entity.Id,
-                Marke = entity.Marke,
-                Tagestarif = entity.Tagestarif,
+                Marke = entity.Brand,
+                Tagestarif = entity.Daylefare,
                 RowVersion = entity.RowVersion
             };
 
-            if (entity is StandardAuto) { dto.AutoKlasse = AutoKlasse.Standard; }
-            if (entity is MittelklasseAuto) { dto.AutoKlasse = AutoKlasse.Mittelklasse; }
-            if (entity is LuxusklasseAuto)
-            {
-                dto.AutoKlasse = AutoKlasse.Luxusklasse;
-                dto.Basistarif = ((LuxusklasseAuto)entity).Basistarif;
-            }
-
+            dto.AutoKlasse = (AutoKlasse)entity.Carclass;
+            dto.Basistarif = entity.Basefare;
 
             return dto;
         }
@@ -72,9 +57,9 @@ namespace AutoReservation.Service.Wcf
             return new Kunde
             {
                 Id = dto.Id,
-                Nachname = dto.Nachname,
-                Vorname = dto.Vorname,
-                Geburtsdatum = dto.Geburtsdatum,
+                Lastname = dto.Nachname,
+                Name = dto.Vorname,
+                Birthday = dto.Geburtsdatum,
                 RowVersion = dto.RowVersion
             };
         }
@@ -85,9 +70,9 @@ namespace AutoReservation.Service.Wcf
             return new KundeDto
             {
                 Id = entity.Id,
-                Nachname = entity.Nachname,
-                Vorname = entity.Vorname,
-                Geburtsdatum = entity.Geburtsdatum,
+                Nachname = entity.Lastname,
+                Vorname = entity.Name,
+                Geburtsdatum = entity.Birthday,
                 RowVersion = entity.RowVersion
             };
         }
@@ -107,11 +92,11 @@ namespace AutoReservation.Service.Wcf
 
             Reservation reservation = new Reservation
             {
-                ReservationsNr = dto.ReservationsNr,
-                Von = dto.Von,
-                Bis = dto.Bis,
-                AutoId = dto.Auto.Id,
-                KundeId = dto.Kunde.Id,
+                ReservationNr = dto.ReservationsNr,
+                From = dto.Von,
+                To = dto.Bis,
+                CarId = dto.Auto.Id,
+                ClientId = dto.Kunde.Id,
                 RowVersion = dto.RowVersion
             };
 
@@ -123,12 +108,12 @@ namespace AutoReservation.Service.Wcf
 
             return new ReservationDto
             {
-                ReservationsNr = entity.ReservationsNr,
-                Von = entity.Von,
-                Bis = entity.Bis,
+                ReservationsNr = entity.ReservationNr,
+                Von = entity.From,
+                Bis = entity.To,
                 RowVersion = entity.RowVersion,
-                Auto = ConvertToDto(entity.Auto),
-                Kunde = ConvertToDto(entity.Kunde)
+                Auto = ConvertToDto(entity.Car),
+                Kunde = ConvertToDto(entity.Client)
             };
         }
         public static List<Reservation> ConvertToEntities(this IEnumerable<ReservationDto> dtos)

@@ -21,3 +21,14 @@ C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoRese
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_MarkupCompile.cache
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_MarkupCompile.lref
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\bin\Debug\AutoReservation.Ui.exe.config
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\Views\AutoView.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\MainWindow.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\Views\KundeView.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\Views\ReservationView.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\App.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_Content.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_MarkupCompile.cache
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_MarkupCompile.lref

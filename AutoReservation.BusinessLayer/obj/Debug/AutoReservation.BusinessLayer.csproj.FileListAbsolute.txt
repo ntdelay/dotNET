@@ -10,3 +10,14 @@ C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.BusinessLayer\bin\Deb
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.dll
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Dal.dll
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.pdb
