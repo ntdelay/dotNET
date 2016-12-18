@@ -8,17 +8,17 @@ namespace AutoReservation.Dal.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ReservationNr { get; set; }
+        public int ReservationsNr { get; set; }
         [ForeignKey("Auto")]
-        public int CarId { get; set; }
+        public int AutoId { get; set; }
         [ForeignKey("Kunde")]
-        public int ClientId { get; set; }
-        public virtual Auto Car { get; set; }
-        public virtual Kunde Client { get; set; }
+        public int KundeId { get; set; }
+        public virtual Auto Auto { get; set; }
+        public virtual Kunde Kunde { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime From { get; set; } 
+        public DateTime Von { get; set; } 
         [Column(TypeName = "datetime")]
-        public DateTime To { get; set; }
+        public DateTime Bis { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; }  
     }

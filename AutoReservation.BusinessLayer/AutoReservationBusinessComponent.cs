@@ -13,8 +13,8 @@ namespace AutoReservation.BusinessLayer
         private static IQueryable<Reservation> GetReservationQueryable(AutoReservationContext db)
         {
             return db.Reservations
-                .Include(r => r.Car)
-                .Include(r => r.Client);
+                .Include(r => r.Auto)
+                .Include(r => r.Kunde);
         }
         private void ReloadAndSave(AutoReservationContext db, object entryObject)
         {
@@ -168,7 +168,7 @@ namespace AutoReservation.BusinessLayer
             using (AutoReservationContext db = new AutoReservationContext())
             {
                 return (from reservation in GetReservationQueryable(db)
-                        where reservation.ReservationNr == nr
+                        where reservation.ReservationsNr == nr
                         select reservation).FirstOrDefault();
             }
         }
@@ -178,7 +178,7 @@ namespace AutoReservation.BusinessLayer
         {
             using (AutoReservationContext db = new AutoReservationContext())
             {
-                reservation = GetReservationByNr(reservation.ReservationNr);
+                reservation = GetReservationByNr(reservation.ReservationsNr);
 
                 db.Entry(reservation).State = EntityState.Deleted;
 
@@ -191,8 +191,8 @@ namespace AutoReservation.BusinessLayer
         {
             using (AutoReservationContext db = new AutoReservationContext())
             {
-                reservation.Car = GetAutoById(reservation.CarId);
-                reservation.Client = GetKundeById(reservation.ClientId);
+                reservation.Auto = GetAutoById(reservation.AutoId);
+                reservation.Kunde = GetKundeById(reservation.KundeId);
 
                 db.Entry(reservation).State = EntityState.Added;
                 db.Reservations.Add(reservation);

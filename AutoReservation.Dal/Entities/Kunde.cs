@@ -10,9 +10,9 @@ namespace AutoReservation.Dal.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Lastname { get; set; }
-        public string Name { get; set; }
-        public DateTime Birthday { get; set; }
+        public string Nachname { get; set; }
+        public string Vorname { get; set; }
+        public DateTime Geburtsdatum { get; set; }
 
         [Timestamp]
         public byte[] RowVersion { get; set; }

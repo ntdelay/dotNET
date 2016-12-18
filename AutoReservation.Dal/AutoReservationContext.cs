@@ -18,6 +18,7 @@ namespace AutoReservation.Dal
         public AutoReservationContext() : base("Name=AutoReservationContext")
         {
             // Ensures that the database will be initialized
+            Database.SetInitializer<AutoReservationContext>(null);
             Database.Initialize(false);
 
             // Disable lazy loading
@@ -39,6 +40,7 @@ namespace AutoReservation.Dal
             // Use this for real "code first" 
             //      - Database will be created by Entity Framework
             //      - Database will be modified by Entity Framework
+
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<AutoReservationContext, Configuration>());
         }
 

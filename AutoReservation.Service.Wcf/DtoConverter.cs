@@ -14,12 +14,12 @@ namespace AutoReservation.Service.Wcf
             if (dto == null) { return null; }
 
             Auto auto = new Auto();
-            auto.Carclass = (int)dto.AutoKlasse;
+            auto.AutoKlasse = (int)dto.AutoKlasse;
             auto.Id = dto.Id;
-            auto.Brand = dto.Marke;
-            auto.Daylefare = dto.Tagestarif;
+            auto.Marke = dto.Marke;
+            auto.Tagestarif = dto.Tagestarif;
             auto.RowVersion = dto.RowVersion;
-            auto.Basefare = dto.Basistarif;
+            auto.Basistarif = dto.Basistarif;
 
             return auto;
         }
@@ -30,13 +30,13 @@ namespace AutoReservation.Service.Wcf
             AutoDto dto = new AutoDto
             {
                 Id = entity.Id,
-                Marke = entity.Brand,
-                Tagestarif = entity.Daylefare,
+                Marke = entity.Marke,
+                Tagestarif = entity.Tagestarif,
                 RowVersion = entity.RowVersion
             };
 
-            dto.AutoKlasse = (AutoKlasse)entity.Carclass;
-            dto.Basistarif = entity.Basefare;
+            dto.AutoKlasse = (AutoKlasse)entity.AutoKlasse;
+            dto.Basistarif = entity.Basistarif;
 
             return dto;
         }
@@ -57,9 +57,9 @@ namespace AutoReservation.Service.Wcf
             return new Kunde
             {
                 Id = dto.Id,
-                Lastname = dto.Nachname,
-                Name = dto.Vorname,
-                Birthday = dto.Geburtsdatum,
+                Nachname = dto.Nachname,
+                Vorname = dto.Vorname,
+                Geburtsdatum = dto.Geburtsdatum,
                 RowVersion = dto.RowVersion
             };
         }
@@ -70,9 +70,9 @@ namespace AutoReservation.Service.Wcf
             return new KundeDto
             {
                 Id = entity.Id,
-                Nachname = entity.Lastname,
-                Vorname = entity.Name,
-                Geburtsdatum = entity.Birthday,
+                Nachname = entity.Nachname,
+                Vorname = entity.Vorname,
+                Geburtsdatum = entity.Geburtsdatum,
                 RowVersion = entity.RowVersion
             };
         }
@@ -92,11 +92,11 @@ namespace AutoReservation.Service.Wcf
 
             Reservation reservation = new Reservation
             {
-                ReservationNr = dto.ReservationsNr,
-                From = dto.Von,
-                To = dto.Bis,
-                CarId = dto.Auto.Id,
-                ClientId = dto.Kunde.Id,
+                ReservationsNr = dto.ReservationsNr,
+                Von = dto.Von,
+                Bis = dto.Bis,
+                AutoId = dto.Auto.Id,
+                KundeId = dto.Kunde.Id,
                 RowVersion = dto.RowVersion
             };
 
@@ -108,12 +108,12 @@ namespace AutoReservation.Service.Wcf
 
             return new ReservationDto
             {
-                ReservationsNr = entity.ReservationNr,
-                Von = entity.From,
-                Bis = entity.To,
+                ReservationsNr = entity.ReservationsNr,
+                Von = entity.Von,
+                Bis = entity.Bis,
                 RowVersion = entity.RowVersion,
-                Auto = ConvertToDto(entity.Car),
-                Kunde = ConvertToDto(entity.Client)
+                Auto = ConvertToDto(entity.Auto),
+                Kunde = ConvertToDto(entity.Kunde)
             };
         }
         public static List<Reservation> ConvertToEntities(this IEnumerable<ReservationDto> dtos)
