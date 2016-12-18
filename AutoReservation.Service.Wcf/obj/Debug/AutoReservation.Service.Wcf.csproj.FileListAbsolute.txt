@@ -1,3 +1,18 @@
 C:\Users\delay\Google Drive\HSR\Prüfung\Grundlagen 32 + (34) = 66\.Net Technologien\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.csprojResolveAssemblyReference.cache
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.csprojResolveAssemblyReference.cache
 C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.csprojResolveAssemblyReference.cache
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Service.Wcf.dll.config
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Service.Wcf.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Service.Wcf.pdb
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Common.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Dal.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\EntityFramework.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Common.pdb
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\EntityFramework.xml
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.dll
+C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Service.Wcf\obj\Debug\AutoReservation.Service.Wcf.pdb
