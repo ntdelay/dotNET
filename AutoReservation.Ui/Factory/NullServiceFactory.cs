@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AutoReservation.Common.DataTransferObjects;
 using AutoReservation.Common.Interfaces;
+using System;
 
 namespace AutoReservation.Ui.Factory
 {
@@ -29,5 +30,39 @@ namespace AutoReservation.Ui.Factory
         public void DeleteAuto(AutoDto auto) { }
         public void DeleteKunde(KundeDto kunde) { }
         public void DeleteReservation(ReservationDto reservation) { }
+
+        void IAutoReservationService.InsertReservation(ReservationDto reservation)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAutoReservationService.UpdateReservation(ReservationDto kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAutoReservationService.InsertKunde(KundeDto kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAutoReservationService.UpdateKunde(KundeDto kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAutoReservationService.InsertAuto(AutoDto auto)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAutoReservationService.UpdateAuto(AutoDto auto)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
     }
 }

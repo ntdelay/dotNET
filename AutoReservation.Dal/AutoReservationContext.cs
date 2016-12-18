@@ -15,7 +15,7 @@ namespace AutoReservation.Dal
 
 
 
-        public AutoReservationContext() : base("Name=CarReservationsContext")
+        public AutoReservationContext() : base("Name=AutoReservationContext")
         {
             // Ensures that the database will be initialized
             Database.Initialize(false);
