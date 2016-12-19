@@ -16,9 +16,7 @@ namespace AutoReservation.TestEnvironment
         {
             using (AutoReservationContext context = new AutoReservationContext())
             {
-                var luxusklasseAutoTableName = context.GetTableName<LuxusklasseAuto>();
-                var mittelklasseAutoTableName = context.GetTableName<MittelklasseAuto>();
-                var standardAutoTableName = context.GetTableName<StandardAuto>();
+               
                 var autoTableName = context.GetTableName<Auto>();
                 var kundeTableName = context.GetTableName<Kunde>();
                 var reservationTableName = context.GetTableName<Reservation>();
@@ -28,42 +26,27 @@ namespace AutoReservation.TestEnvironment
                     // Delete all records from tables
                     //      > Cleanup for specific subtypes necessary when not using table per hierarchy (TPH)
                     //        since entities will be stored in different tables.
-                    if (luxusklasseAutoTableName != autoTableName)
-                    { 
-                        context.DeleteAllRecords(luxusklasseAutoTableName); 
-                    }
-                    if (mittelklasseAutoTableName != autoTableName)
-                    { 
-                        context.DeleteAllRecords(mittelklasseAutoTableName); 
-                    }
-                    if (standardAutoTableName != autoTableName)
-                    { 
-                        context.DeleteAllRecords(standardAutoTableName); 
-                    }
+                
                     context.DeleteAllRecords(reservationTableName);
                     context.DeleteAllRecords(autoTableName);
                     context.DeleteAllRecords(kundeTableName);
 
                     // Reset the identity seed (Id's will start again from 1)
-                    context.ResetEntitySeed(luxusklasseAutoTableName);
-                    context.ResetEntitySeed(mittelklasseAutoTableName);
-                    context.ResetEntitySeed(standardAutoTableName);
+                
                     context.ResetEntitySeed(autoTableName);
                     context.ResetEntitySeed(kundeTableName);
                     context.ResetEntitySeed(reservationTableName);
 
                     // Temporarily allow insertion of identity columns (Id)
-                    context.SetAutoIncrementOnTable(luxusklasseAutoTableName, true);
-                    context.SetAutoIncrementOnTable(mittelklasseAutoTableName, true);
-                    context.SetAutoIncrementOnTable(standardAutoTableName, true);
+            
                     context.SetAutoIncrementOnTable(autoTableName, true);
                     context.SetAutoIncrementOnTable(kundeTableName, true);
                     context.SetAutoIncrementOnTable(reservationTableName, true);
 
                     // Insert test data
-                    context.Autos.AddRange(Autos);
-                    context.Kunden.AddRange(Kunden);
-                    context.Reservationen.AddRange(Reservationen);
+                    context.Cars.AddRange(Autos);
+                    context.Clients.AddRange(Kunden);
+                    context.Reservations.AddRange(Reservationen);
                     context.SaveChanges();
                 }
                 catch (Exception ex)
@@ -73,9 +56,7 @@ namespace AutoReservation.TestEnvironment
                 finally
                 {
                     // Disable insertion of identity columns (Id)
-                    context.SetAutoIncrementOnTable(luxusklasseAutoTableName, false);
-                    context.SetAutoIncrementOnTable(mittelklasseAutoTableName, false);
-                    context.SetAutoIncrementOnTable(standardAutoTableName, false);
+                   
                     context.SetAutoIncrementOnTable(autoTableName, false);
                     context.SetAutoIncrementOnTable(kundeTableName, false);
                     context.SetAutoIncrementOnTable(reservationTableName, false);
@@ -95,9 +76,9 @@ namespace AutoReservation.TestEnvironment
         private static List<Auto> Autos =>
             new List<Auto>
             {
-                new StandardAuto {Id = 1, Marke = "Fiat Punto", Tagestarif = 50},
-                new MittelklasseAuto {Id = 2, Marke = "VW Golf", Tagestarif = 120},
-                new LuxusklasseAuto {Id = 3, Marke = "Audi S6", Tagestarif = 180, Basistarif = 50},
+                new Auto {Id = 1, Marke = "Fiat Punto", Tagestarif = 50},
+                new Auto {Id = 2, Marke = "VW Golf", Tagestarif = 120},
+                new Auto {Id = 3, Marke = "Audi S6", Tagestarif = 180, Basistarif = 50},
             };
 
         private static List<Reservation> Reservationen =>

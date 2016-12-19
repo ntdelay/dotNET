@@ -1,1 +1,12 @@
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.TestEnvironment.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.TestEnvironment.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.Dal.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.pdb

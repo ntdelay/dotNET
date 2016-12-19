@@ -28,3 +28,13 @@ C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Common\bin\Debug\EntityFrame
 C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Common\obj\Debug\AutoReservation.Common.csprojResolveAssemblyReference.cache
 C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Common\obj\Debug\AutoReservation.Common.dll
 C:\Users\delay\Desktop\Neuer Ordner\AutoReservation.Common\obj\Debug\AutoReservation.Common.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\AutoReservation.Common.dll.config
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\AutoReservation.Common.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\AutoReservation.Common.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\EntityFramework.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\EntityFramework.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\obj\Debug\AutoReservation.Common.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\obj\Debug\AutoReservation.Common.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Common\obj\Debug\AutoReservation.Common.pdb

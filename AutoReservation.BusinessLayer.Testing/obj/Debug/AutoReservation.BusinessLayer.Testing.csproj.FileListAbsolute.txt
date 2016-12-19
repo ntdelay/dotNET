@@ -1,1 +1,19 @@
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.BusinessLayer.Testing.dll.config
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.BusinessLayer.Testing.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.BusinessLayer.Testing.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.Dal.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.TestEnvironment.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\EntityFramework.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\AutoReservation.TestEnvironment.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\EntityFramework.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\bin\Debug\de\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.pdb

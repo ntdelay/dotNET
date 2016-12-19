@@ -24,19 +24,25 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void GetAutosTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            List<AutoDto> carList = Target.Autos;
+
+            Assert.IsNotNull(carList);
         }
 
         [TestMethod]
         public void GetKundenTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            List<KundeDto> clientList = Target.Kunden;
+
+            Assert.IsNotNull(clientList);
         }
 
         [TestMethod]
         public void GetReservationenTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            List<ReservationDto> reservationList = Target.Reservationen;
+
+            Assert.IsNotNull(reservationList);
         }
 
         #endregion
@@ -46,19 +52,28 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void GetAutoByIdTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            AutoDto car = Target.GetAutoById(1);
+
+            Assert.AreEqual(1, car.Id);
+            Assert.AreEqual("Fiat Punto", car.Marke);
         }
 
         [TestMethod]
         public void GetKundeByIdTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            KundeDto client = Target.GetKundeById(1);
+
+            Assert.AreEqual("Anna", client.Vorname);
+            Assert.AreEqual("Nass", client.Nachname);
+            
         }
 
         [TestMethod]
         public void GetReservationByNrTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            ReservationDto reservation = Target.GetReservationByNr(1);
+
+            Assert.AreEqual(1, reservation.ReservationsNr);
         }
 
         #endregion
@@ -68,18 +83,26 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void GetAutoByIdWithIllegalIdTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            AutoDto car = Target.GetAutoById(20);
+
+            Assert.IsNull(car);
         }
 
         [TestMethod]
         public void GetKundeByIdWithIllegalIdTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            KundeDto client = Target.GetKundeById(20);
+
+            Assert.IsNull(client);
         }
 
         [TestMethod]
         public void GetReservationByNrWithIllegalIdTest()
         {
+
+            ReservationDto reservation = Target.GetReservationByNr(20);
+
+            Assert.IsNull(reservation);
         }
 
         #endregion
@@ -89,19 +112,52 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void InsertAutoTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            int carCount = Target.Autos.Count;
+
+            AutoDto car = new AutoDto();
+            car.Marke = "VW";
+
+            Target.InsertAuto(car);
+
+            int newCarCount = Target.Autos.Count;
+
+            Assert.AreEqual(newCarCount, carCount + 1);
         }
 
         [TestMethod]
         public void InsertKundeTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            int clientCount = Target.Kunden.Count;
+
+            KundeDto client = new KundeDto();
+            client.Nachname = "Delay";
+            client.Vorname = "Anthony";
+            client.Geburtsdatum = new DateTime(1963, 1, 1);
+
+            Target.InsertKunde(client);
+
+            int newCount = Target.Kunden.Count;
+
+            Assert.AreEqual(newCount, clientCount + 1);
         }
 
         [TestMethod]
         public void InsertReservationTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            int reservationCount = Target.Reservationen.Count;
+
+            AutoDto car = Target.GetAutoById(1);
+            KundeDto client = Target.GetKundeById(1);
+
+            ReservationDto reservation = new ReservationDto();
+            reservation.Von = new DateTime(2017, 1, 1);
+            reservation.Bis = new DateTime(2018, 1, 1);
+            reservation.Auto = car;
+            reservation.Kunde = client;
+
+            Target.InsertReservation(reservation);
+
+            int newCount = Target.Reservationen.Count;
         }
 
         #endregion
@@ -111,19 +167,40 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void DeleteAutoTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            int carCount = Target.Autos.Count;
+
+            AutoDto car = Target.GetAutoById(1);
+            Target.DeleteAuto(car);
+
+            int newCount = Target.Autos.Count + 1;
+
+            Assert.AreEqual(newCount, carCount);
         }
 
         [TestMethod]
         public void DeleteKundeTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            int clientCount = Target.Kunden.Count;
+
+            KundeDto client = Target.GetKundeById(1);
+            Target.DeleteKunde(client);
+
+            int newCount = Target.Kunden.Count + 1;
+
+            Assert.AreEqual(newCount, clientCount);
         }
 
         [TestMethod]
         public void DeleteReservationTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            int reservationCount = Target.Reservationen.Count;
+
+            ReservationDto reservation = Target.GetReservationByNr(1);
+            Target.DeleteReservation(reservation);
+
+            int newCount = Target.Reservationen.Count + 1;
+
+            Assert.AreEqual(newCount, reservationCount);
         }
 
         #endregion
@@ -133,19 +210,40 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void UpdateAutoTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            AutoDto car = Target.GetAutoById(1);
+            car.Marke = "VW Polo";
+
+            Target.UpdateAuto(car);
+
+            AutoDto testCar = Target.GetAutoById(1);
+
+            Assert.AreEqual(testCar.Marke, "VW Polo");
         }
 
         [TestMethod]
         public void UpdateKundeTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            KundeDto client = Target.GetKundeById(1);
+            client.Vorname = "Adrian";
+
+            Target.UpdateKunde(client);
+
+            KundeDto testClient = Target.GetKundeById(1);
+
+            Assert.AreEqual(testClient.Vorname, "Adrian");
         }
 
         [TestMethod]
         public void UpdateReservationTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            ReservationDto reservation = Target.GetReservationByNr(1);
+            reservation.Von = new DateTime(2017, 1, 1);
+
+            Target.UpdateReservation(reservation);
+
+            ReservationDto testReservation = Target.GetReservationByNr(1);
+
+            Assert.AreEqual(reservation.Von, testReservation.Von);
         }
 
         #endregion
