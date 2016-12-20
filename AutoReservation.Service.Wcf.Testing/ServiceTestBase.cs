@@ -251,21 +251,39 @@ namespace AutoReservation.Service.Wcf.Testing
         #region Update with optimistic concurrency violation
 
         [TestMethod]
+        [ExpectedException(typeof(FaultException))]
         public void UpdateAutoWithOptimisticConcurrencyTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            AutoDto carTest1 = Target.GetAutoById(1);
+            AutoDto carTest2 = Target.GetAutoById(1);
+            carTest1.Marke = "Vw";
+            carTest2.Marke = "BMW";
+            Target.UpdateAuto(carTest1);
+            Target.UpdateAuto(carTest2);
         }
 
         [TestMethod]
+        [ExpectedException(typeof(FaultException))]
         public void UpdateKundeWithOptimisticConcurrencyTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            KundeDto clientTest1 = Target.GetKundeById(1);
+            KundeDto clientTest2 = Target.GetKundeById(1);
+            clientTest1.Vorname = "Adrian";
+            clientTest2.Vorname = "Anthony";
+            Target.UpdateKunde(clientTest1);
+            Target.UpdateKunde(clientTest2);
         }
 
         [TestMethod]
+        [ExpectedException(typeof(FaultException))]
         public void UpdateReservationWithOptimisticConcurrencyTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            ReservationDto reservationTest1 = Target.GetReservationByNr(1);
+            ReservationDto reservationTest2 = Target.GetReservationByNr(1);
+            reservationTest1.Bis = new DateTime(2017, 1, 1);
+            reservationTest2.Bis = new DateTime(2018, 1, 1);
+            Target.UpdateReservation(reservationTest1);
+            Target.UpdateReservation(reservationTest2);
         }
 
         #endregion
