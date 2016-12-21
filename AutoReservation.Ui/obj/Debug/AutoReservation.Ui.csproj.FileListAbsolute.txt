@@ -60,3 +60,42 @@ C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoRese
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.csproj.GenerateResource.Cache
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.exe
 C:\Users\adria\HSR\Semester 5\MsTe\Project\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Ui.exe.config
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.exe
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Ui.Factory.NinjectBindings.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Ui.exe
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Ui.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Common.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Service.Wcf.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\EntityFramework.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\Ninject.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\Ninject.Extensions.Xml.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Dal.dll
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Common.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Service.Wcf.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\EntityFramework.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\Ninject.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\Ninject.Extensions.Xml.xml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.csprojResolveAssemblyReference.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\Views\AutoView.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\MainWindow.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\Views\KundeView.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\Views\ReservationView.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\App.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_Content.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_MarkupCompile.cache
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui_MarkupCompile.lref
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\Views\AutoView.baml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\MainWindow.baml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\Views\KundeView.baml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\Views\ReservationView.baml
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.g.resources
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.Properties.Resources.resources
+C:\Users\delay\Desktop\dotNet\AutoReservation.Ui\obj\Debug\AutoReservation.Ui.csproj.GenerateResource.Cache

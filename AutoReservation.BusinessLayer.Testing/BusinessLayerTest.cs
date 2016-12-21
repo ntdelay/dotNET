@@ -31,19 +31,48 @@ namespace AutoReservation.BusinessLayer.Testing
         [TestMethod]
         public void UpdateAutoTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            Auto auto1 = Target.GetAutoById(1);
+            auto1.Tagestarif = 100;
+            auto1.Marke = "VW";
+
+            Target.UpdateAuto(auto1);
+
+            Auto testCar = Target.GetAutoById(1);
+
+            Assert.AreEqual("VW", testCar.Marke);
+            Assert.AreEqual(100, testCar.Tagestarif);
+            Assert.AreNotEqual(99, testCar.Tagestarif);
         }
 
         [TestMethod]
         public void UpdateKundeTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            Kunde client = Target.GetKundeById(1);
+            client.Vorname = "Anthony";
+            client.Nachname = "Delay";
+
+            Target.UpdateKunde(client);
+
+            Kunde testClient = Target.GetKundeById(1);
+
+            Assert.AreEqual("Delay", testClient.Nachname);
+            Assert.AreEqual("Anthony", testClient.Vorname);
+             
         }
 
         [TestMethod]
         public void UpdateReservationTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+            Reservation reservation = Target.GetReservationByNr(1);
+            reservation.Von = new DateTime(2017, 1, 1);
+            reservation.Bis = new DateTime(2018, 1, 1);
+
+            target.UpdateReservation(reservation);
+
+            Reservation testReservation = Target.GetReservationByNr(1);
+
+            Assert.AreEqual(new DateTime(2017, 1, 1), testReservation.Von);
+            
         }
 
     }
